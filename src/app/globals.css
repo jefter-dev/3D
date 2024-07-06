@@ -1,0 +1,76 @@
+html,
+body {
+  background: #07161b !important;
+  padding: 30px;
+}
+
+.card-3d canvas {
+  width: 100% !important;
+  height: 350px !important;
+  border-radius: 10px;
+  margin-bottom: 30px !important;
+}
+
+.card-3d {
+  width: 100% !important;
+  height: 350px;
+  margin-bottom: 30px !important;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px !important;
+}
+
+.card-3d:active {
+  cursor: grabbing;
+  /* Muda o cursor para grabbing quando a div estiver ativa (clicada) */
+}
+
+.container-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  color: #58d5d3;
+  transition: all .4s ease;
+}
+
+::-webkit-scrollbar-track {
+  background: #07161b;
+  border-radius: 4px;
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #58d5d3;
+  border-radius: 4px;
+  width: 4px;
+  transition: all .4s ease;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .container-3d {
+    flex-direction: column;
+  }
+
+  .container-logo a img {
+    width: 100%;
+    height: auto;
+  }
+}
